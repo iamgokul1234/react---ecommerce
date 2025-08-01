@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    background-image: url(ecom_bg.jpg);
+}
+
+h3{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #ffff;
+    margin-top: 20px;
+}
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 20px auto;
+}
+
+.container input{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    width: 300px;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 12px;
+    background-color: blue;
+    color:#ffff;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 400px) {
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .container input {
+    width: 90%;
+    font-size: 13px;
+  }
+
+  .cardContainer {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 850px) and (min-width: 700px) {
+  h3 {
+    font-size: 1.8em;
+  }
+
+  .container {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .container input {
+    width: 70%;
+    font-size: 14px;
+  }
+
+  .cardContainer {
+    gap: 20px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .container {
+    justify-content: flex-end;
+  }
+
+  .container input {
+    width: 300px;
+  }
+}

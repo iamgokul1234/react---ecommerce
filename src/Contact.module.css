@@ -1,0 +1,166 @@
+.contactSection{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+}
+
+.contactSection h1{
+    position:absolute;
+    top:10%;
+    left: 54%;
+    color: white;
+}
+
+.socialBox{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.socialBox a{
+    color: lightgray;
+    text-decoration: none;
+    font-size: 20px;
+    text-wrap: nowrap;
+}
+
+.socialBox .icon{
+    color: #727fde;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.contactBox p{
+    max-width: 400px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.contactBox input{
+    padding: 10px 30px;
+    background-color: #fff;
+    width: 300px;
+    height: auto;
+    border:none;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.contactBox button{
+    margin-top: 30px;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #727fdeb4;
+    background-color: #2200493d;
+    box-shadow: 0 0 5px #727fde86;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+.contactBox button:hover{
+    box-shadow: 0 0 15px #727fde86;
+    opacity: 0.7;
+}
+
+.contactBox .mess {
+    width: 300px;
+  height: 100px;
+  background-color: #fff;
+  padding: 10px;
+  resize: vertical;
+  font-size: 16px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border:none;
+  outline: none;
+}
+
+/* For 360px × 740px */
+@media screen and (max-width: 380px) {
+  .contactSection {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .contactSection h1 {
+    position: static;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .socialBox {
+    align-items: center;
+    gap: 20px;
+  }
+
+  .socialBox a {
+    font-size: 16px;
+  }
+
+  .contactBox input,
+  .contactBox .mess {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .contactBox {
+    width: 100%;
+    align-items: center;
+  }
+
+  .contactBox button {
+    width: 100%;
+  }
+}
+
+
+/* For 820px × 1180px */
+@media screen and (max-width: 850px) {
+  .contactSection {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .contactSection h1 {
+    position: static;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .socialBox {
+    align-items: center;
+  }
+
+  .contactBox {
+    width: 100%;
+    align-items: center;
+  }
+
+  .contactBox input,
+  .contactBox .mess {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .contactBox button {
+    width: 100%;
+  }
+}
+
+
+
+
