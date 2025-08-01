@@ -29,7 +29,7 @@ export default function Login() {
 
   return (
     <div className={styles.container}>
-      <h2>Login Page</h2>
+      <h2 style={{color:'black'}}>Login</h2>
       <form onSubmit={handleSubmit}>
         <div className={styles.inputBox}>
         <input

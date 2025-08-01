@@ -16,10 +16,10 @@ const HomeCard = ({ title, description, image, onAction, actionLabel }) => (
     }
   >
     <Meta
-      title={<span style={{ color: "#f3f3f3" }}>{title}</span>}
-      description={<span style={{ color: "#f3f3f3" }}>{description}</span>}
+      title={<span style={{ color: "#333" }}>{title}</span>}
+      description={<span style={{ color: "#333" }}>{description}</span>}
     />
-    <Button onClick={onAction} type="primary" style={{ marginTop: 10 }}>
+    <Button onClick={onAction}  style={{ marginTop: 10, backgroundColor:'#ffce12' }}>
       {actionLabel}
     </Button>
   </Card>

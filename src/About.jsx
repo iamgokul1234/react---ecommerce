@@ -2,8 +2,9 @@ import styles from "./About.module.css";
 export default function About() {
   return (
     <div>
+      <h3>🛍️ About Us</h3>
       <div className={styles.card}>
-        <h3>🛍️ About Us</h3>
+        <h2>Who we are?</h2>
         <p>
           Welcome to ShopNest — your one-stop destination for quality products,
           unbeatable prices, and seamless shopping experiences. At ShopNest, we

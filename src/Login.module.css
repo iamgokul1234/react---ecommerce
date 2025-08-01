@@ -16,8 +16,8 @@ body {
   position: relative;
   width: 400px;
   height: 450px;
-  background-color: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: #c1e2a7;
+
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -28,8 +28,8 @@ body {
 h2 {
   font-size: 1.5em;
   text-align: center;
-  color: whitesmoke;
   margin: 25px auto;
+  color: #333;
 }
 
 .inputBox {
@@ -44,10 +44,10 @@ h2 {
   padding: 10px 8px 8px 8px;
   font-size: 1em;
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0,0,0, 0.5);
   outline: none;
   background-color: transparent;
-  color: whitesmoke;
+  color: #3a3a3a;
 }
 
 .inputBox label {
@@ -57,7 +57,7 @@ h2 {
   transform: translateY(-50%);
   font-size: 1em;
   pointer-events: none;
-  color: white;
+  color: #333;
   transition: 0.3s ease;
 }
 
@@ -65,12 +65,12 @@ h2 {
 .inputBox input:valid ~ label {
   top: -10px;
   font-size: 0.9em;
-  color: white;
+  color: #333;
 }
 
 p {
   font-size: 16px;
-  color: whitesmoke;
+  color: rgb(17, 16, 16);
 }
 
 .buttonContainer {

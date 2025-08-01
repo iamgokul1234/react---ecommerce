@@ -1,5 +1,6 @@
 
 import HomeCard from './HomeCard';
+import {IoCart } from "react-icons/io5";
 
 export default function Cart({ cart = [], setCart = () => {} }){
 
@@ -10,9 +11,14 @@ export default function Cart({ cart = [], setCart = () => {} }){
 
 
     return(<div>
-        <h3>Cart Items</h3>
+        <h3 style={{color: '#333', fontSize:'50px'}}><IoCart /> Cart</h3>
       {cart.length === 0 ? (
-        <p style={{ textAlign: "center" }}>Cart is empty!</p>
+        <div>
+          <p style={{ textAlign: "center", color:"#333", fontSize:'30px' }}>Cart is empty!</p>
+          <img src='empty_cart.png' alt='' style={{width: '300px'}}></img>
+
+        </div>
+        
       ) : (
         <div style={{ display: "flex", flexWrap: "wrap" }}>
           {cart.map((item) => (
