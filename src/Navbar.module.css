@@ -9,7 +9,7 @@ body {
 }
 
 .reactContainer {
-  background-color:#0f1111;
+  background-color: #0f1111;
   display: flex;
   align-items: center;
   position: fixed;
@@ -34,18 +34,15 @@ body {
   position: relative;
 }
 
-
-.react{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffff;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
+.react {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
 }
-
-
 
 .navs {
   display: flex;
@@ -66,18 +63,18 @@ body {
   text-decoration: none;
 }
 
-
-.navs::after{
-  content: '';
+.navs::after {
+  content: "";
   width: 0%;
   height: 3px;
-  background: rgb(120, 39, 145);
+  background: rgb(254, 48, 48);
   position: absolute;
   left: 0;
-  bottom: -100%;
+  bottom: -80%;
+  transition: 0.5s;
 }
 
-.navs:hover::after{
+.navs:hover::after {
   width: 100%;
 }
 
@@ -98,7 +95,7 @@ body {
   outline: none;
 }
 
-.menuIcon{
+.menuIcon {
   display: none;
   cursor: pointer;
   position: absolute;
@@ -107,7 +104,7 @@ body {
   color: white;
 }
 
-.sidebar{
+.sidebar {
   position: fixed;
   top: 60px;
   right: -300px;
@@ -121,24 +118,23 @@ body {
   transition: right 0.5s ease;
   z-index: 999;
   backdrop-filter: blur(10px);
-  box-shadow: 0px 4px 6px rgba(255,255,255, 0.2);
+  box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
   background-color: #4b4b4b;
   border-bottom-left-radius: 20px;
-
 }
 
-.sidebar a{
+.sidebar a {
   color: white;
   text-decoration: none;
   font-size: 18px;
   padding-left: 30px;
 }
 
-.sidebar a:hover{
+.sidebar a:hover {
   text-decoration: underline;
 }
 
-.open{
+.open {
   right: 0 !important;
 }
 
@@ -150,13 +146,13 @@ body {
   color: white;
 }
 
-.sidebarSearchContainer{
+.sidebarSearchContainer {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.sidebarInput{
+.sidebarInput {
   width: 100%;
   padding: 10px 35px 10px 15px;
   border-radius: 20px;
@@ -166,7 +162,7 @@ body {
   position: relative;
 }
 
-.sidebarSearchIcon{
+.sidebarSearchIcon {
   position: absolute;
   right: 30px;
   font-size: 18px;
@@ -174,13 +170,12 @@ body {
   cursor: pointer;
 }
 
-
-@media screen and (max-width: 768px){
-  .navContainer{
+@media screen and (max-width: 768px) {
+  .navContainer {
     display: none;
   }
 
-  .menuIcon{
+  .menuIcon {
     display: block;
   }
 }
@@ -205,4 +200,3 @@ body {
     font-size: 15px;
   }
 }
-
